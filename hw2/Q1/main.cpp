@@ -20,7 +20,7 @@ int sc_main(int argc,char* argv[])
 	clock(clk);
 	pattern(clk,A,B,C_in);
 	adder_4bit(A,B,C_in,S,C_out);
-	mon(clk,S,C_out,A,B,C_in);
+	mon(clk,A,B,S,C_in,C_out);
 	
 	
 	sc_start(500,SC_NS);

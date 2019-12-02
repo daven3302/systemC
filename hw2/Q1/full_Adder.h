@@ -7,14 +7,12 @@
 SC_MODULE(full_Adder)
 {	
 	sc_in<sc_int<4> > A,B;
-    sc_in<sc_int<1> > Ai,Bi;
     sc_in<sc_uint<1> > C_in;
 	sc_out<sc_int<4> > S;
-    sc_out<sc_int<1> > Si;
     sc_out<sc_uint<1> > C_out;
-	sc_int<4> a,b,s,;
-	sc_bit ra,rb,rs,c_in,c_out;
-	sc_int<1> rra,rrb;
+	sc_int<4> a,b,s;
+	sc_int<5> c;
+	sc_uint<1> c_in,c_out;
 
 	void full_adder();
 	
